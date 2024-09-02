@@ -1,0 +1,117 @@
+/* Global Reset and Base Styles */
+
+
+
+
+/* .homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  width: 100%;
+} */
+
+/* .homepage-box-container { */
+  /* background-image:url("./assets/S.jpg");  */
+  /* background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; */
+/* }
+
+.homepage-logo-container {
+  margin-bottom: 20px;
+}
+
+.homepage-logo {
+  width: 50%;
+  height: 50%;
+ 
+  margin-bottom: -12%;
+}
+
+.homepage-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.homepage-button-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  gap: 20px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.homepage-button1, .homepage-button2 {
+  width: 180px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, border 0.3s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}
+
+.homepage-button1:hover, .homepage-button2:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .homepage-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .homepage-button1, .homepage-button2 {
+    width: 150px;
+    font-size: medium;
+  }
+
+  .homepage-box-container {
+    padding: 2rem;
+  }
+
+  .homepage-button-container {
+    flex-direction: column; 
+  }
+}
+
+@media (min-width: 768px) {
+  .homepage-box-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .homepage-button1, .homepage-button2 {
+    width: auto;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .homepage-box-container {
+    max-width: 800px;
+    padding: 4rem;
+  }
+
+  .homepage-button1, .homepage-button2 {
+    padding: 15px;
+    font-size: larger;
+  }
+} */

@@ -1,0 +1,233 @@
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  /* background-image: url("../assets/bc.png"); */
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../assets/bc.png");
+  /* padding: 10px; */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navBar-logoContainer {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.navBar-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .employee-navbar__home-button {
+
+  
+
+  
+} */
+
+.employee-navbar__home-button-image {
+  width: 50px; /* Adjust the size of your home button image */
+  height: 50px;
+  border-radius: 50%;
+  /* border: 2px solid #ddd; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-navbar__home-button:hover .employee-navbar__home-button-image {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.employee-navbar__home-button:active .employee-navbar__home-button-image {
+  background-color: #3e8e41; /* Even darker green on click */
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+
+.navBar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navBar-dropdownToggle {
+  position: relative;
+  cursor: pointer;
+ 
+  z-index: 1000; /* Ensures dropdown is on top of most other elements */
+}
+
+.navBar-profileImage {
+  width: 35px;
+  margin-left: 13%;
+  
+ 
+}
+
+.navBar-dropdownHeader {
+  display: flex;
+  align-items: center;
+  
+}
+
+.navBar-dropdownTitle {
+font-size: 18px;
+  margin-bottom: -17%;
+  text-decoration: underline;
+  margin-left: -34%;
+  color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+.navBar-dropdownTitle:hover {
+    transform: scale(1.1); /* Zoom in by 10% on hover */
+  }
+
+
+.navBar-dropdownIcon {
+  color: white;
+  font-size: 50px;
+  margin-left: -5px;
+  margin-bottom: -31%;
+  transition: transform 0.3s ease-in-out;
+}
+.navBar-dropdownIcon:hover {
+  transform: scale(1.1); /* Zoom in by 10% on hover */
+}
+
+
+.navBar-menuItem {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 25px;
+  font-size: 18px;
+  z-index: 1001;
+  position: absolute;
+  margin-top: 20px;
+  background-color: rgb(7, 10, 92);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  gap: 30px;
+  color: white;
+  padding: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 30px;
+
+  
+
+  
+}
+
+
+
+.navBar-profileMenuItem {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 25px;
+  margin-left: 0px;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 80%;
+  text-align: left;
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  gap: 30px;
+}
+
+.navBar-profileIcon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.navBar-profileMenuItem:hover {
+  color: rgb(35, 178, 245);
+  background-color: rgba(35, 178, 245, 0.1);
+  transform: scale(1.05);
+}
+
+/* Fixing the gap between dropdowns */
+.navBar-dropdownToggle {
+  margin-right: 70px;
+}
+/* Keyframes for zoom-out animation */
+@keyframes zoomOut {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Applying zoom-out animation to dropdown menus */
+.navBar-dropdownMenu-employee,
+.navBar-dropdownMenu-recruitment,
+.navBar-profileDropdownMenu {
+  top: 100%;
+  right: 0;
+  border-radius: 5px;
+  background-color: rgb(7, 10, 92);
+  z-index: 1000; /* Ensures dropdown is on top of other elements */
+  animation: zoomOut 0.3s ease-in-out forwards; /* Adding animation */
+  transform-origin: top right; /* Dropdown expands from the top right corner */
+}
+
+.navBar-profileDropdownMenu {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  font-size: 25px;
+  border-radius: 5px;
+  z-index: 1000;
+  background-color: rgb(7, 10, 92);
+  padding: 10px;
+  animation: zoomOut 0.3s ease-in-out forwards; /* Adding animation */
+  transform-origin: top right; 
+}
+.employee-navbar__home-button-container {
+  flex: 1;
+  text-align: center;
+}
+
+.employee-navbar__home-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.employee-navbar__home-text {
+  font-size: 18px;
+  margin-top: 85%;
+  text-decoration: underline;
+  margin-left: -100%;
+  color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+.employee-navbar__home-text:hover {
+    transform: scale(1.1); /* Zoom in by 10% on hover */
+  }

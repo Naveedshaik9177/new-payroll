@@ -1,0 +1,128 @@
+.body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.admin-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.adminsidebar {
+  width: 250px; 
+  background-color: #333;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 2px05pxrgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  transition: all 0.3s ease-in-out; 
+}
+
+/* Content area */.content {
+   /* Create space for the sidebar */width: calc(100% - 270px); /* Adjust width based on sidebar */transition: margin-left 0.3s ease-in-out; /* Smooth transition */padding: 20px;
+  overflow: auto; 
+  margin-top: 0%;
+}
+
+/* Sidebar for smaller screens */@media (max-width: 768px) {
+  .adminsidebar {
+    width: 200px;
+  }
+
+  .content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+}
+
+@media (max-width: 480px) {
+  .adminsidebar {
+    width: 60px; /* Minimized sidebar width */padding: 10px0;
+  }
+
+  .content {
+    margin-left: 80px; /* Adjust content margin for minimized sidebar */width: calc(100% - 80px);
+  }
+
+  .adminsidebara {
+    font-size: 12px; /* Smaller font size */padding: 10px0;
+    text-align: center;
+  }
+
+  .adminsidebar.admin-logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+  }
+}
+
+/* Sidebar button hover effects */.admin-button1:hover,
+.admin-button2:hover,
+.admin-button3:hover,
+.admin-button4:hover,
+.admin-button5:hover {
+  transform: scale(1.05);
+}
+
+/* Content area animations */.admin-slide {
+  transition: all 0.8scubic-bezier(0.54, 0.35, 0.29, 0.99);
+  transform: translateX(100%);
+}
+
+.admin-slide-in {
+  transform: translateX(0%);
+}
+/* Admin Component Styling */
+
+.home-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .home-page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-page {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 5px;
+  }
+}

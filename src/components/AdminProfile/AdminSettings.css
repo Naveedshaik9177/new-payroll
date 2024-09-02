@@ -1,0 +1,211 @@
+/* Main settings box */
+.admin-settings-box {
+  width: 70%;
+  margin: 4% auto; /* Assuming 1000px height, 40px -> 4% */
+  padding: 2%; /* Assuming width-based padding */
+  border-radius: 1%; /* Approximation for 10px */
+  box-shadow: 0 0.4% 1.4% rgba(0, 0, 0, 0.1); /* Approximation for 4px and 14px */
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  overflow-y: auto;
+  color: #ffffff;
+  border: 0.2% solid #fbfbfb; /* Approximation for 2px */
+  box-sizing: border-box;
+  background-color: #2f30312f;
+  margin-right: 40%;
+}
+
+.admin-setting-title {
+  color: white;
+}
+
+/* Content alignment */
+.admin-settings-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%; /* Assuming height-based margin */
+  gap: 2%; /* Assuming height-based gap */
+}
+
+.admin-settings-half-width {
+  color: black;
+  width: 100%; /* Full width of the container */
+  padding: 1%; /* Assuming width-based padding */
+  animation: slideIn 0.3s ease-in-out forwards;
+}
+
+.setting-change {
+  color: black;
+}
+
+/* Button styles */
+.admin-settings-content button {
+  margin-left: 1%;
+  width: 70%;
+  margin-bottom: 1%; /* Assuming height-based margin */
+  padding: 1%; /* Assuming height-based padding */
+  font-size: 1.6rem; /* Assuming a base font size */
+  cursor: pointer;
+  background-color: #dce1e7;
+  color: rgb(19, 18, 18);
+  border: none;
+  border-radius: 0.4%; /* Approximation for 4px */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.setting-title {
+  color: white;
+  margin-left: 0%;
+  text-align: center;
+}
+
+.admin-settings-content button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Edit profile section styles */
+.admin-settings-edit-profile-section {
+  margin-top: 1%; /* Assuming height-based margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1%; /* Assuming height-based gap */
+}
+
+.admin-settings-edit-profile-section input[type="text"],
+.admin-settings-edit-profile-section input[type="file"] {
+  padding: 1%; /* Assuming width-based padding */
+  width: 80%;
+  margin-bottom: 1%; /* Assuming height-based margin */
+  border: 0.1% solid #ccc; /* Approximation for 1px */
+  border-radius: 0.4%; /* Approximation for 4px */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.admin-settings-profile-image {
+  width: 10%; /* Assuming parent width is significant */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%;
+  margin-top: 1%; /* Assuming height-based margin */
+  transition: transform 0.3s ease-in-out;
+}
+
+.admin-settings-profile-image:hover {
+  transform: scale(1.1);
+}
+
+.admin-settings-save-button-container {
+  margin-top: 2%; /* Assuming height-based margin */
+}
+
+.admin-settings-save-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1%; /* Assuming width-based padding */
+  border: none;
+  border-radius: 0.5%; /* Approximation for 5px */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.admin-settings-save-button:hover {
+  background-color: #45a049;
+}
+
+/* Password section styles */
+.admin-settings-password-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-settings-password-section input {
+  margin-bottom: 1%; /* Assuming height-based margin */
+  padding: 1%; /* Assuming width-based padding */
+  width: 80%;
+  border: 0.1% solid #ccc; /* Approximation for 1px */
+  border-radius: 0.4%; /* Approximation for 4px */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.admin-settings-success-message {
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 1%; /* Assuming height-based margin */
+}
+
+/* History section styles */
+.admin-settings-history-section {
+  margin-top: 2%; /* Assuming height-based margin */
+}
+
+.admin-settings-history-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-settings-history-section li {
+  background: #f4f4f4;
+  border: 0.1% solid #ddd; /* Approximation for 1px */
+  padding: 1%; /* Assuming width-based padding */
+  margin-bottom: 0.5%; /* Assuming height-based margin */
+  border-radius: 0.4%; /* Approximation for 4px */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.admin-settings-history-section li:hover {
+  background-color: #e0e0e0;
+}
+
+.admin-settings-search-bar {
+  width: 80%;
+  padding: 1%; /* Assuming width-based padding */
+  margin-bottom: 1%; /* Assuming height-based margin */
+  border: 0.1% solid #ccc; /* Approximation for 1px */
+  border-radius: 0.4%; /* Approximation for 4px */
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Delete history button */
+.admin-settings-delete-history-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 1% 2%; /* Assuming width-based padding */
+  border: none;
+  border-radius: 0.5%; /* Approximation for 5px */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.admin-settings-delete-history-button:hover {
+  background-color: #e64a19;
+}
+
+/* Back button */
+.admin-settings-back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 1% 2%; /* Assuming width-based padding */
+  border: none;
+  border-radius: 0.5%; /* Approximation for 5px */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.admin-settings-back-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-2%); opacity: 0; } /* Assuming width-based transformation */
+  to { transform: translateX(0); opacity: 1; }
+}

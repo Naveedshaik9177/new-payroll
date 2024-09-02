@@ -1,0 +1,175 @@
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.employee-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.employee-navbar__logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.employee-navbar__logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-navbar__home-button-container {
+  display: flex;
+  align-items: center;
+  margin-left: 60%;
+}
+
+.employee-navbar__home-button {
+  background: none; /* Remove any background */
+  padding: 0; /* Remove any padding */
+  border: none; /* Remove any border */
+  cursor: pointer; /* Make it clickable */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-navbar__home-button-image {
+  width: 50px; /* Adjust the size of your home button icon */
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-navbar__home-button:hover .employee-navbar__home-button-image {
+/* Slightly lighter background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.employee-navbar__home-button:active .employee-navbar__home-button-image {
+ /* Even lighter background on click */
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+.employee-navbar__nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.employee-navbar__profile-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.employee-navbar__profile-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.employee-navbar__profile-dropdown {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  font-size: 25px;
+  border-radius: 5px;
+  z-index: 1000;
+  background-color: rgb(7, 10, 92);
+  padding: 10px;
+}
+
+.employee-navbar__profile-item {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  background-color: rgb(7, 10, 92);
+}
+
+.employee-navbar__profile-item:hover {
+  color: rgb(35, 178, 245);
+  transform: scale(1.05);
+}
+
+.employee-navbar__icon {
+  font-size: 30px;
+}
+
+.employee-navbar__dropdown-icon {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+.employee-navbar__dropdown-label {
+  color: #ddd;
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.employee-navbar__ticket-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.employee-navbar__ticket-text {
+  display: flex;
+  align-items: center;
+}
+
+.employee-navbar__ticket-dropdown {
+  position: absolute;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: #2f30312f;
+  width: 80%;
+}
+
+.employee-navbar__ticket-item {
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(7, 10, 92);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.employee-navbar__clock-in {
+  width: 50px; 
+  height: 50px;
+  cursor: pointer;
+  margin-right: 50px; 
+  margin-top: 8px;
+}
+
+.employee-navbar__clock-in-icon {
+  width: 100%;
+  height: 100%;
+}

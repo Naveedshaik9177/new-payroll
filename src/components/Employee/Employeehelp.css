@@ -1,0 +1,98 @@
+.emp-help-menu {
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    animation: adminFadeIn 0.5s ease-in-out;
+    text-align: center;
+    color: #ffffff;
+    box-sizing: border-box;
+    background-color: #2f30312f;
+    margin-right: 50%;
+    border: 2px solid #fbfbfb;
+    height: auto;
+
+}
+.emp-help-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 0%;
+}
+.emp-help-contact {
+    color: white;
+    margin-bottom: 10px;
+}
+.emp-contact-info {
+    margin-top: 10px;
+    background: #FAFAFA;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    animation: adminSlideIn 0.5s ease-in-out;
+    color: #333;
+}
+.emp-help-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.emp-help-list-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.emp-back-button {
+    margin-top: 20px;
+    width: 20%;
+    padding: 10px;
+    background: #0056B3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+.emp-back-button:hover {
+    background: #0C345E;
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.emp-back-button:active {
+    background: #083978;
+    transform: scale(0.95);
+}
+@keyframes empFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes empSlideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .emp-help-menu {
+        padding: 15px;
+        width: 80%;
+    }
+    .emp-help-list-item {
+        font-size: 14px;
+    }
+    .emp-back-button {
+        width: 100%;
+        text-align: center;
+    }
+}
